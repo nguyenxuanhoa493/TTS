@@ -6,7 +6,7 @@ def convert_text_to_audio(text_input,voice,speed):
     loading_text.text= 'Đang load...'
     url = "https://viettelgroup.ai/voice/api/tts/v1/rest/syn"
     data = {"text": text_input, "voice": voice, "id": "2", "without_filter": False, "speed": speed, "tts_return_option": 3}
-    headers = {'Content-type': 'application/json', 'token': 'Ouk1qNEOoDi-vNB7GzqINySEg1VqAwjDQZDVFn4SarYOkSxG-JVbr8Jxf1Tc9gIP'}
+    headers = {'Content-type': 'application/json', 'token': 'ZtLiDGJkyfHq0CJ8D18F2pp493u-8RFMBiIQULKbF67vCiT6-G0RKtWnK1LHBcV5'}
 
     response = requests.post(url, data=json.dumps(data), headers=headers, verify=False)
     data = response.content
